@@ -4,7 +4,8 @@ import google.generativeai as genai
 
 # Configurar API de Gemini (Gratis)
 genai.configure(api_key=os.environ["GEMINI_API_KEY"])
-model = genai.GenerativeModel('gemini-1.5-flash')
+modelo = genai.GenerativeModel('models/gemini-1.5-flash')
+
 
 # 1. Generar el guion diario automáticamente
 prompt = "Escribe un guion corto y viral de 30 segundos sobre una curiosidad del espacio para un Short de YouTube."
